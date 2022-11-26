@@ -1,4 +1,4 @@
-function createGame(player1, hour, player2) {
+function createGame(player1,hour,player2){
     return `
         <li>
         <img src="./assets/icon=${player1}.svg" alt="Bandeira do Brasil">

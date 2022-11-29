@@ -24,3 +24,28 @@ document.querySelector("#cards").innerHTML =
 createCard("18/12", "DOMINGO",
     createGame("aconfirmar", "12:00", "aconfirmar")
 )
+
+//EU
+let atraso = -0.4;
+function createCard2(date, day, games) {
+    atraso = atraso + 0.4;
+    return `
+    <div class="card2" style="animation-delay: ${delay}s">
+    <h2>${date}<span>${day}</span></h2>
+        <ul>
+        ${games}
+        </ul>
+    </div>
+    `
+}
+
+
+document.querySelector("#cards2").innerHTML =    
+createCard2("18/12", "DOMINGO",
+    createGame("aconfirmar", "10:00", "aconfirmar")
+)
+
+
+//
+
+

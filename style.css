@@ -53,6 +53,106 @@ body *{
     padding-top: 52px;
 }
 
+
+/* Eu fiz */
+#app2{    
+    width: fit-content;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.card2{
+    display: block;
+    align-items: center;    
+    padding: 20px 20px;
+    text-align: center;
+    background-color: var(--card-bg-color);
+    border-radius: 6px;
+    box-shadow: 0px 2px 0px 0px var(--card-color-primary);
+    border-bottom: 2px solid var(--card-color-primary);
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto; 
+}
+
+.card2 h2{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    border: 1px solid   var(--card-title-border-color);
+    border-radius: 6px;
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 20px;
+    color: #f7dd43;
+    font-size: 15px;
+}
+
+.card2 > h2 > span{
+    color: #e1e1e6;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.card2 > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 200px;
+}
+
+.card2 > ul > li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Esse seletor vai buscar um elemento 'li' que tenha antes dele outro elemento 'li' */
+.card2>ul>li + li{
+    padding-top: 15px;
+    border-top: 1px solid #323238;
+}
+
+.card2>ul>li>strong{
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 100%;
+    color: #e1e1e6;
+}
+
+.card2 > h2:hover,
+.card2 > ul > li > strong:hover,
+.card2 > ul > li > img:hover{
+    transform: scale(1.5);
+}
+
+.card2 > h2,
+.card2 > ul > li > strong,
+.card2 > ul > li > img{
+    transition: transform 0.5s;
+}
+
+.card2{
+    opacity: 0;
+    animation: aparecer .2s forwards;
+}
+
+header > h4{    
+    color: #e1e1e6;
+    padding-top: 0px;
+    font-weight: 100;
+    font-size: 15px;
+    line-height: 1%;
+    color: white;
+}
+
+/* ----------------------*/
+
+
 header{
     margin-bottom: 20px;
     text-align: center;
@@ -100,7 +200,6 @@ header > h2{
     padding: 4px 8px;
     border: 1px solid   var(--card-title-border-color);
     border-radius: 6px;
-
     width: fit-content;
     margin-inline: auto;
     margin-bottom: 20px;

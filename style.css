@@ -284,6 +284,7 @@ div.conteiner{
     padding-bottom: 10px;
     flex-direction: row;
     gap: 5px;
+    text-align: center;
 }
 
 div.conteiner > a {
@@ -298,6 +299,7 @@ div.conteiner > a {
     outline: 0;
     text-decoration: none;
     color: #121214;
+    text-align: center;
 }
 
 div.conteiner > a:hover{
@@ -323,6 +325,7 @@ div.conteiner{
     padding-bottom: 5px;
     flex-direction: row;
     gap: 5px;
+    text-align: center;
 }
 
 div.conteiner > a {

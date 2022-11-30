@@ -337,6 +337,7 @@ div.conteiner > a {
     outline: 0;
     text-decoration: none;
     color: #121214;
+    text-align: center;
 }
 
 div.conteiner > a:hover{

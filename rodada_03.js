@@ -32,18 +32,18 @@ createCard("29/11", "terça",
 createCard("30/11", "quarta",
     createGame("tunisia", "1", "12:00", "0", "france") +
     createGame("australia", "1", "12:00", "0", "denmark") +
-    createGame("poland", "", "16:00", "", "argentina") +
+    createGame("poland", "-", "16:00", "-", "argentina") +
     createGame("saudi arabia", "", "16:00", "", "mexico")
 ) +
 createCard("01/12", "quinta",
-    createGame("croatia", "", "12:00", "", "belgium") +
-    createGame("canada", "", "12:00", "", "morocco") +
-    createGame("japan", "", "16:00", "", "spain") +
-    createGame("costa rica", "", "16:00", "", "germany")
+    createGame("croatia", "-", "12:00", "-", "belgium") +
+    createGame("canada", "-", "12:00", "-", "morocco") +
+    createGame("japan", "-", "16:00", "-", "spain") +
+    createGame("costa rica", "-", "16:00", "-", "germany")
 ) +
 createCard("02/12", "Sexta",
-    createGame("south korea", "", "12:00", "", "portugal") +
-    createGame("ghana", "", "12:00", "", "uruguay") +
-    createGame("serbia", "", "16:00", "", "switzerland") +
-    createGame("cameroon", "", "16:00", "", "brazil")
+    createGame("south korea", "-", "12:00", "-", "portugal") +
+    createGame("ghana", "-", "12:00", "-", "uruguay") +
+    createGame("serbia", "-", "16:00", "-", "switzerland") +
+    createGame("cameroon", "-", "16:00", "-", "brazil")
 )

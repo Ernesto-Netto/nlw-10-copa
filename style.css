@@ -34,13 +34,11 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
     background-color: #121214;
     background-image: var(--bg);
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;    
 }
 
 body *{
@@ -57,8 +55,7 @@ body *{
 .tooltip {
     position: relative;
     display: inline-block;
-  }
-  
+  }  
   
   .tooltip .tooltiptext {
     visibility: hidden;
@@ -82,7 +79,6 @@ body *{
     visibility: visible;
     opacity: 1;
   }
-
 
 /* Eu fiz */
 #app2{    
@@ -267,6 +263,10 @@ header > h2{
     font-size: 25px;
     line-height: 100%;
     color: #e1e1e6;
+}
+
+.card>ul>li> .res{
+    color: var(--card-color-primary);
 }
 
 .card > h2:hover,

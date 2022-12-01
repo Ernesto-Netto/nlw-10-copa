@@ -32,10 +32,10 @@ createCard("04/12", "domingo",
     createGame("england", "-", "16:00", "-", "senegal")
 ) +
 createCard("05/11", "segunda",
-    createGame("spain", "-", "12:00", "-", "aconfirmar") +
+    createGame("japan", "-", "12:00", "-", "croatia") +
     createGame("brazil", "-", "16:00", "-", "aconfirmar")
 ) +
 createCard("06/12", "terça",
-    createGame("aconfirmar", "-", "12:00", "-", "aconfirmar") +
+    createGame("morocco", "-", "12:00", "-", "spain") +
     createGame("portugal", "-", "16:00", "-", "aconfirmar")
 )

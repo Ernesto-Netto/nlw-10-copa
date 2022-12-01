@@ -167,10 +167,7 @@ body *{
     animation: aparecer .2s forwards;
 }
 
-
-
 /* ----------------------*/
-
 
 header{
     margin-bottom: 20px;
@@ -191,11 +188,13 @@ header > h2{
 #cards{
     display: flex;
     flex-direction: column;
-    gap: 15px
+    gap: 15px;
+    align-items: center;
     /* margin-left: 175px;
     margin-top: 0 auto;
     margin-bottom: 0 auto;
     margin-right: 0 auto;  */
+    
 }
 
 .card{
@@ -281,6 +280,16 @@ header > h2{
     animation: aparecer .2s forwards;
 }
 
+.grupos > tbody > tr > td:hover,
+.img:hover{
+    transform: scale(1.2);
+}
+
+.grupos > tbody > tr > td:hover,
+.img{
+    transition: transform 0.8s;
+}
+
 .img{
     width: 25px;
     height:25px;
@@ -289,11 +298,15 @@ header > h2{
     display: inline-table;
     align-items: center;
     justify-content: space-between;
+    vertical-align: middle;
 }
 
 .grupos{
     padding-top: 10px;
     padding-bottom: 20px;
+    border-collapse: separate;
+    border-radius: 10px;
+    color: white;
 }
 
 .grupos>thead>tr>th{
@@ -321,9 +334,11 @@ header > h2{
     padding: 5px;
     display: flexbox;
     justify-content: space-between;
-    color: black;
+    color: rgb(255, 255, 255);
     border-radius: 15px;  
     box-shadow: 0px 1px 0px 0px var(--card-color-primary);
+    vertical-align: middle;
+
     
 }
 

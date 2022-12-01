@@ -36,10 +36,10 @@ createCard("30/11", "quarta",
     createGame("saudi arabia", "1", "16:00", "2", "mexico")
 ) +
 createCard("01/12", "quinta",
-    createGame("croatia", "-", "12:00", "-", "belgium") +
-    createGame("canada", "-", "12:00", "-", "morocco") +
-    createGame("japan", "-", "16:00", "-", "spain") +
-    createGame("costa rica", "-", "16:00", "-", "germany")
+    createGame("croatia", "0", "12:00", "0", "belgium") +
+    createGame("canada", "1", "12:00", "2", "morocco") +
+    createGame("japan", "2", "16:00", "1", "spain") +
+    createGame("costa rica", "2", "16:00", "4", "germany")
 ) +
 createCard("02/12", "Sexta",
     createGame("south korea", "-", "12:00", "-", "portugal") +

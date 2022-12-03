@@ -433,5 +433,54 @@ div.conteiner > a:hover{
     background-color: var(--card-bg-color);
     color: white;
 }
+
+.grupos{
+    max-width: 500px;
+    color: white;
+}
+
+.img{
+    width: 15px;
+    height:15px;
+    object-fit: fill;
+    gap: 5px;
+    display: inline-table;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+.grupos>thead>tr>th{
+    border: 1px solid var(--card-color-primary);
+    background-color: var(--card-title-border-color);
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.grupos>tbody>tr>th{
+    border: 1px solid var(--card-color-primary);
+    background-color: #047c3f;
+    width: 120px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.grupos>tbody>tr>td{
+    border: 1px solid var(--card-title-border-color); 
+    background-color: rgba(255, 255, 255, 0.055);
+    text-align: left;
+    align-items: center;
+    height: 15px;
+    padding: 3px;
+    display: flexbox;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;  
+    box-shadow: 0px 1px 0px 0px var(--card-color-primary);
+    vertical-align: middle;
+    font-size: 10px;    
+}
 }
 

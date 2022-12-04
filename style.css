@@ -475,7 +475,7 @@ div.conteiner > a:hover{
     width: 100vh;   
 } */
 
-@media (max-width: 500px){
+@media (min-width: 320px) and (max-width: 500px){
     #cards {
         max-width: 500px;
         flex-direction: column;
@@ -490,14 +490,20 @@ div.conteiner{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 5px;
-    padding-bottom: 5px;    
-    gap: 5px;
+    padding: 2px;
+    /* padding-top: 0px;
+    padding-bottom: 0px;     */
+    gap: 3px;
     text-align: center;
+    max-width: 50vh;
+    margin: 5px auto 5px auto;
+    box-shadow: 0px 1px 0px 0px var(--card-color-primary);
+    border-radius: 5px;
+
 }
 
 div.conteiner > a {
-    padding: 5px 5px;
+    padding: 2px 2px 2px 2px;
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
     background-color: var(--card-color-primary);

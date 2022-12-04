@@ -187,7 +187,9 @@ header > h2{
 
 #cards{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 15px;
     align-items: center;
     /* margin-left: 175px;
@@ -299,6 +301,8 @@ header > h2{
     align-items: center;
     justify-content: space-between;
     vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 
 .grupos{
@@ -355,22 +359,26 @@ header > h2{
 
 @media (min-width: 700px){
     #cards {
-        max-width: 750px;
+        max-width: 800px;
         flex-direction: row;
         flex-wrap: wrap;
 } 
 
 div.conteiner{
+    padding-bottom: 10px;    
+    gap: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 15px;
+    align-items: center;
+    padding-top: 20px;
+    align-items: center;
     width: 100%;
     height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    flex-direction: row;
-    gap: 5px;
-    text-align: center;    
+
 }
 
 div.conteiner > a {
@@ -405,11 +413,12 @@ div.conteiner{
     width: 100%;
     height: 10vh;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding-top: 5px;
-    padding-bottom: 5px;
-    flex-direction: row;
+    padding-bottom: 5px;    
     gap: 5px;
     text-align: center;
 }
@@ -435,7 +444,10 @@ div.conteiner > a:hover{
 }
 
 .grupos{
-    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
     color: white;
 }
 
@@ -448,6 +460,8 @@ div.conteiner > a:hover{
     align-items: center;
     justify-content: space-between;
     vertical-align: middle;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 
 .grupos>thead>tr>th{
@@ -455,6 +469,7 @@ div.conteiner > a:hover{
     background-color: var(--card-title-border-color);
     padding: 3px;
     border-radius: 5px;
+    width: 100vh;
 }
 
 .grupos>tbody>tr>th{
@@ -481,6 +496,20 @@ div.conteiner > a:hover{
     box-shadow: 0px 1px 0px 0px var(--card-color-primary);
     vertical-align: middle;
     font-size: 10px;    
+}
+
+header > h2{    
+    color: #e1e1e6;
+    padding: 5px;
+    font-weight: 100;
+    font-size: 25px;
+    line-height: 100%;
+    color: var(--card-color-primary);
+    border: 1px solid var(--card-color-primary);
+    border-radius: 10px;
+    width: 450px;
+    display: block;
+    align-items: center;
 }
 }
 

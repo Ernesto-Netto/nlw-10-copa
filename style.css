@@ -493,7 +493,7 @@ div.conteiner > a:hover{
     width: 100vh;   
 } */
 
-@media (min-width: 320px) and (max-width: 500px){
+@media (min-width: 300px) and (max-width: 700px){
     #cards {
         max-width: 500px;
         flex-direction: column;
@@ -508,13 +508,13 @@ div.conteiner{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 2px;
+    padding: 1px;
     /* padding-top: 0px;
     padding-bottom: 0px;     */
-    gap: 3px;
+    gap: 1px;
     text-align: center;
-    max-width: 50vh;
-    margin: 5px auto 5px auto;
+    max-width: 60vh;
+    margin: 3px auto 3px auto;
     box-shadow: 0px 1px 0px 0px var(--card-color-primary);
     border-radius: 5px;
 
@@ -546,7 +546,8 @@ div.conteiner > a:hover{
     flex-wrap: nowrap;
     align-items: center;
     color: white;
-    width: auto;
+    width: 99%;
+    margin: auto;
 }
 
 .img{
@@ -577,7 +578,7 @@ div.conteiner > a:hover{
     text-align: center;
     padding: 3px;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 10px;
 }
 
 .grupos>tbody>tr>td{
@@ -586,15 +587,14 @@ div.conteiner > a:hover{
     text-align: left;
     align-items: center;
     height: 15px;
-    padding: 3px;
+    padding: 1px;
     display: flexbox;
     /* justify-content: space-between; */
     color: rgb(255, 255, 255);
     border-radius: 5px;  
     box-shadow: 0px 1px 0px 0px var(--card-color-primary);
     vertical-align: middle;
-    font-size: 10px;
-    /* width: auto;    */
+    font-size: 9.5px;   
 } 
 
 header > h2{    

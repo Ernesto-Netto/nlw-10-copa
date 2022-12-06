@@ -386,12 +386,10 @@ div.conteiner{
     width: 100%;
     height: 10vh;
     /* border: 1px solid var(--card-color-primary); */
-    max-width: 100vh;
+    max-width: 150vh;
     margin: 20px auto 20px auto;
     box-shadow: 0px 1px 0px 0px var(--card-color-primary);
     border-radius: 5px;
-    
-
 }
 
 div.conteiner > a {
@@ -611,3 +609,41 @@ header > h2{
     align-items: center;
 }
 }
+
+div.campeao{
+    padding-bottom: 10px;
+    padding-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    /* width: 100%;
+    height: 10vh; */
+    /* border: 1px solid var(--card-color-primary); */
+    margin: auto;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+div.campeao > h3{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    color: #f7dd43;
+    border: 5px solid var(--card-color-primary);
+    vertical-align: middle;
+}
+
+.camp{
+    object-fit: fill;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+

@@ -103,7 +103,7 @@ body *{
 #app2{    
     width: fit-content;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 25px;
 }
 
 .card2{
@@ -611,8 +611,8 @@ header > h2{
 }
 
 div.campeao{
-    padding-bottom: 10px;
-    padding-top: 100px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -645,5 +645,10 @@ div.campeao > h3{
     vertical-align: middle;
     margin-left: 10px;
     margin-right: 10px;
+}
+.taca{
+    width: fit-content;
+    margin: auto;
+    padding-top: 25px;
 }
 

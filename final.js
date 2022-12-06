@@ -43,8 +43,8 @@ function createCard2(date, day, games) {
 
 
 document.querySelector("#cards2").innerHTML =    
-createCard2("18/12", "DOMINGO",
-    createGame("aconfirmar",  "-", "10:00",  "-", "aconfirmar")
+createCard2("17/12", "sábado",
+    createGame("aconfirmar",  "-", "12:00",  "-", "aconfirmar")
 )
 
 

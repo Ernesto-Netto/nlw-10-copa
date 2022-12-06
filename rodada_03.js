@@ -42,8 +42,8 @@ createCard("01/12", "quinta",
     createGame("costa rica", "2", "16:00", "4", "germany")
 ) +
 createCard("02/12", "Sexta",
-    createGame("south korea", "-", "12:00", "-", "portugal") +
-    createGame("ghana", "-", "12:00", "-", "uruguay") +
-    createGame("serbia", "-", "16:00", "-", "switzerland") +
-    createGame("cameroon", "-", "16:00", "-", "brazil")
+    createGame("south korea", "2", "12:00", "1", "portugal") +
+    createGame("ghana", "0", "12:00", "2", "uruguay") +
+    createGame("serbia", "2", "16:00", "3", "switzerland") +
+    createGame("cameroon", "1", "16:00", "0", "brazil")
 )

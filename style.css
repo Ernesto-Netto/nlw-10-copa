@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* width: auto; */
 }
 
 :root{
@@ -16,14 +17,31 @@ body.blue{
     --card-color-primary: #338af3;
     --card-bg-color: #202024;
     --bg: url(./assets/bg-blue.svg);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #121214;
+    background-image: var(--bg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
-
 
 body.green{
     --card-title-border-color: #047c3f;
     --card-color-primary: #047c3f;
     --card-bg-color: #1a1f1b;
     --bg: url(./assets/bg-green.svg);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #121214;
+    background-image: var(--bg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
 }
 
 li{
@@ -38,7 +56,8 @@ body{
     background-image: var(--bg);
     background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: contain;
+    width: 100%;
 }
 
 body *{
@@ -185,16 +204,26 @@ header > h2{
     border-radius: 10px;
 }
 
+header > h4{    
+    color: #e1e1e6;
+    padding: 10px;
+    font-weight: 1000;
+    font-size: 15px;
+    line-height: 100%;
+    color: var(--card-color-primary);
+    border: 1px solid var(--card-color-primary);
+    border-radius: 10px;
+}
+
 #cards{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     gap: 15px;
-    align-items: center;
-    /* margin-left: 175px;
-    margin-top: 0 auto;
-    margin-bottom: 0 auto;
-    margin-right: 0 auto;  */
-    
+    margin: auto;
+    align-items: center;  
+    max-width: 700px;   
 }
 
 .card{
@@ -299,6 +328,8 @@ header > h2{
     align-items: center;
     justify-content: space-between;
     vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 10px;
 }
 
 .grupos{
@@ -337,9 +368,48 @@ header > h2{
     color: rgb(255, 255, 255);
     border-radius: 15px;  
     box-shadow: 0px 1px 0px 0px var(--card-color-primary);
-    vertical-align: middle;
+    vertical-align: middle;    
+}
 
-    
+div.conteiner{
+    padding-bottom: 10px;    
+    gap: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 15px;
+    align-items: center;
+    padding-top: 20px;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    /* border: 1px solid var(--card-color-primary); */
+    max-width: 150vh;
+    margin: 20px auto 20px auto;
+    box-shadow: 0px 1px 0px 0px var(--card-color-primary);
+    border-radius: 5px;
+}
+
+div.conteiner > a {
+    padding: 5px 15px;
+    /* font-size: 15px; */
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--card-color-primary);
+    border: 1px solid var(--card-title-border-color);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    outline: 0;
+    text-decoration: none;
+    color: #0b0b0b;
+    text-align: center;
+}
+
+div.conteiner > a:hover{
+    background-color: var(--card-bg-color);
+    color: white;
 }
 
 @keyframes aparecer{
@@ -353,24 +423,28 @@ header > h2{
     }
 }
 
-@media (min-width: 700px){
+ /* @media (max-width: 500px){
     #cards {
-        max-width: 750px;
+        max-width: 500px;
         flex-direction: row;
         flex-wrap: wrap;
 } 
 
 div.conteiner{
+    padding-bottom: 10px;    
+    gap: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 15px;
+    align-items: center;
+    padding-top: 20px;
+    align-items: center;
     width: 100%;
     height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    flex-direction: row;
-    gap: 5px;
-    text-align: center;    
+
 }
 
 div.conteiner > a {
@@ -384,7 +458,7 @@ div.conteiner > a {
     transition: 0.5s;
     outline: 0;
     text-decoration: none;
-    color: #121214;
+    color: #fdfdfe;
     text-align: center;
 }
 
@@ -392,12 +466,35 @@ div.conteiner > a:hover{
     background-color: var(--card-bg-color);
     color: white;
 }
+
+.grupos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: white;
+    width: 100vh;
+    margin: auto;
 }
 
-@media (max-width: 699px){
+.grupos>thead>tr>th{
+    border: 1px solid var(--card-color-primary);
+    background-color: var(--card-title-border-color);
+    padding: 3px;
+    border-radius: 5px;
+    width: 100vh;
+}
+
+.grupos>tbody>tr>td{
+    display: flexbox;
+    box-shadow: 0px 1px 0px 0px var(--card-color-primary);    
+    width: 100vh;   
+} */
+
+@media (min-width: 300px) and (max-width: 700px){
     #cards {
-        max-width: 750px;
-        flex-direction: row;
+        max-width: 500px;
+        flex-direction: column;
         flex-wrap: wrap;
 } 
 
@@ -405,17 +502,24 @@ div.conteiner{
     width: 100%;
     height: 10vh;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    flex-direction: row;
-    gap: 5px;
+    padding: 1px;
+    /* padding-top: 0px;
+    padding-bottom: 0px;     */
+    gap: 1px;
     text-align: center;
+    max-width: 60vh;
+    margin: 3px auto 3px auto;
+    box-shadow: 0px 1px 0px 0px var(--card-color-primary);
+    border-radius: 5px;
+
 }
 
 div.conteiner > a {
-    padding: 5px 5px;
+    padding: 2px 2px 2px 2px;
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
     background-color: var(--card-color-primary);
@@ -433,5 +537,113 @@ div.conteiner > a:hover{
     background-color: var(--card-bg-color);
     color: white;
 }
+
+.grupos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: white;
+    width: 99%;
+    margin: auto;
+}
+
+.img{
+    width: 15px;
+    height:15px;
+    object-fit: fill;
+    gap: 5px;
+    display: inline-table;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
+.grupos>thead>tr>th{
+    border: 1px solid var(--card-color-primary);
+    background-color: var(--card-title-border-color);
+    padding: 3px;
+    border-radius: 5px;
+    width: 375px;
+}
+
+.grupos>tbody>tr>th{
+    border: 1px solid var(--card-color-primary);
+    background-color: #047c3f;
+    width:max-content;
+    text-align: center;
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.grupos>tbody>tr>td{
+    border: 1px solid var(--card-title-border-color); 
+    background-color: rgba(255, 255, 255, 0.055);
+    text-align: left;
+    align-items: center;
+    height: 15px;
+    padding: 1px;
+    display: flexbox;
+    /* justify-content: space-between; */
+    color: rgb(255, 255, 255);
+    border-radius: 5px;  
+    box-shadow: 0px 1px 0px 0px var(--card-color-primary);
+    vertical-align: middle;
+    font-size: 9.5px;   
+} 
+
+header > h2{    
+    color: #e1e1e6;
+    padding: 5px;
+    font-weight: 100;
+    font-size: 25px;
+    line-height: 100%;
+    color: var(--card-color-primary);
+    border: 1px solid var(--card-color-primary);
+    border-radius: 10px;
+    width: auto;
+    display: block;
+    align-items: center;
+}
+}
+
+div.campeao{
+    padding-bottom: 10px;
+    padding-top: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    /* width: 100%;
+    height: 10vh; */
+    /* border: 1px solid var(--card-color-primary); */
+    margin: auto;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+
+div.campeao > h3{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    border-radius: 25px;
+    color: #f7dd43;
+    border: 5px solid var(--card-color-primary);
+    vertical-align: middle;
+}
+
+.camp{
+    object-fit: fill;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 

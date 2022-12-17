@@ -560,14 +560,17 @@ div.campeao{
 }
 
 div.campeao > h3{
-    padding: 20px;
-    text-align: center;
     display: flex;
-    flex-direction: row;
-    border-radius: 25px;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+    border: 3px solid var(--card-title-border-color);
+    border-radius: 20px;
+    width: fit-content;
+    margin-inline: auto;
+    margin-bottom: 20px;
     color: #f7dd43;
-    border: 5px solid var(--card-color-primary);
-    vertical-align: middle;
 }
 
 .camp{
